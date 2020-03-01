@@ -45,10 +45,13 @@ header .container {
 
 header .logo {
     font-weight: 600;
+    color: white;
+    text-decoration: none;
 }
 
 header nav {
     width: 1.5rem;
+    display: none;
 }
 
 .hamburger {
@@ -88,6 +91,11 @@ header nav {
     text-align: center;
 }
 
+.section a{
+    text-decoration: none;
+    color: #9a9a9a;
+}
+
 .section-with-border {
     border-bottom: 1px solid #dbdbdb;
     padding-bottom: 2rem;
@@ -96,6 +104,10 @@ header nav {
 .align-center{
     margin: 2rem 0;
     text-align:center;
+}
+
+article{
+    margin-bottom: 3em;
 }
 
 /* headers */
@@ -112,7 +124,7 @@ h6 {
 }
 
 h2 {
-    font-size: 1.75rem;
+    font-size: 2em;
     font-weight: 100;
 }
 
@@ -153,6 +165,7 @@ h2 + .subtitle {
 h3 + .subtitle {
     margin-top: -14px;
 }
+
 
 /* definition */
 
@@ -233,10 +246,10 @@ blockquote {
     color: white;
 }
 
-.image{
-    display:block;
-    width:40%;
+.imgsub{
+    background-color: white;
 }
+
 .image img{
     display:block;
     width:100%;
@@ -244,10 +257,14 @@ blockquote {
 .right{
     float:right;
     padding:0 0 1rem 1rem;
+    display:block;
+    width:40%;
 }
 .left{
     float:left;
     padding:0 1rem 1rem 0;
+    display:block;
+    width:40%;
 }
 .box{
     border:solid 1px #dbdbdb;
@@ -268,6 +285,10 @@ footer{
 
 @media screen and (min-width:480px){
 
+    nav{
+        display: none;
+    }
+
     .section{
         text-align:left;
     }
@@ -279,6 +300,23 @@ footer{
         display:inline-block;
         margin-right:1rem;
     }
+
+    .image.fit{
+        display: block;
+        margin-bottom: 2em;
+        width: 100%;
+    }
+
+    .text {
+        text-align: left;
+    }
+
+    .imgsub{
+        text-align: left;
+    }
+    
+
+    
 }
 @media screen and (min-width:736px){
 
