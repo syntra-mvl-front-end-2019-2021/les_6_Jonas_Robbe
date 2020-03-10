@@ -35,8 +35,8 @@ header {
     background-color: #5385c1;
     color: white;
     padding: 0.75rem 0;
+    
 }
-
 
 #header{
     position: fixed;
@@ -44,6 +44,7 @@ header {
     width: 100%;
     display: block;
     text-align: right;
+    height: 44px;
 }
 
 header .container {
@@ -58,6 +59,32 @@ header .logo {
     color: white;
     text-decoration: none;
     position: absolute;
+}
+
+#two{
+    background: #5385c1;
+    color: #bacee6;
+}
+
+.box.person .image img {
+    max-width: 100%;
+}
+.image.round img {
+    border-radius: 100%;
+}
+.image img {
+    border-radius: 0;
+    display: block;
+}
+
+#headerindex{
+    background-color: #fff;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav{
+    display: none;
 }
 
 .hamburger {
@@ -118,6 +145,39 @@ article{
 
 .article-1{
     padding: 0 3em 0 0;
+}
+
+.flex.flex-3 article{
+    width: 100%;
+    border-bottom: 1px solid #dbdbdb;
+    padding-bottom: 2.5em;
+    margin-bottom: 3em;
+    text-align: center;
+}
+
+#banner{
+    padding: 12em 0 10em 0;
+    background-image: url(images/banner.jpg);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    text-align: center;
+    border-top: 0.5em solid #5385c1;
+}
+
+#banner h1 {
+    font-size: 2.5em;
+    font-weight: 100;
+    color: #fff;
+    line-height: 1em;
+    margin: 0 0 0.5em 0;
+    padding: 0;
+}
+
+#banner p{
+    font-size: 1em;
+    color: rgba(255, 255, 255, 0.55);
+    margin-bottom: 1.75em;
 }
 
 /* headers */
@@ -304,7 +364,7 @@ footer{
     background-color: #5385c1;
 }
 
-@media screen and (min-width:480px){
+@media screen and (max-width:480px){
 
     nav{
         display: none;
@@ -313,13 +373,21 @@ footer{
     .section{
         text-align:left;
     }
+    #banner{
+        padding: 6em 1.5em 4em 1.5em;
+    }
+    #banner p{
+        font-size: .9em;
+    }
     .container{
         width:90%;
+
     }
     .button{
-        width:auto;
+        
         display:inline-block;
         margin-right:1rem;
+        text-decoration: none;
     }
 
     .image.fit{
@@ -348,8 +416,14 @@ footer{
     }
     
 }
-@media screen and (min-width:736px){
+@media screen and (max-width:736px){
 
+    #banner{
+        padding: 8em 1.5em 6em 1.5em;
+    }
+    #banner p{
+        font-size: .9em;
+    }
     .break-1{
         display:flex;
         margin:0 -0.75rem;
@@ -368,17 +442,33 @@ footer{
         text-align: left;
     }
 }
-@media screen and (min-width:980px){
+@media screen and (max-width:980px){
 
-    nav{
-        display: inline;
+
+    .break-1{
+        display:flex;
+        margin:0 -0.75rem;
+        justify-content: space-around;
     }
 
-    nav a{
-        text-decoration: none;
-        color: inherit;
-        padding: 0 0 0.75em;
-        font-size: 0.8em;
+    .break-2{
+        display:flex;
+        margin:0 -0.75rem;
+    }
+    .break-3{
+        display:flex;
+        margin:0 -1.5rem;
+    }
+    .block-3{
+        width:calc(50% - 1.5rem);
+        margin:0 1.5rem;
+    }
+    
+}
+@media screen and (max-width:1280px){
+
+    .container{
+        max-width:1100px;
     }
 
     .break-1{
@@ -401,21 +491,51 @@ footer{
     }
     
 }
-@media screen and (min-width:1280px){
-
-    .container{
-        max-width:1100px;
+@media screen and (max-width:1680px){
+    
+    .break-1{
+        display:flex;
+        margin:0 -0.75rem;
+        justify-content: space-around;
+        text-align: left;
+        padding: 0 0 0 2em;
+        font-size: 18px;
+        
+    }
+    .block{
+        width: 50%;
+        padding: 0 0 0 1.5em;
     }
 
+    .break-2{
+        justify-content: space-around;
+        display:flex;
+        margin:0 -0.75rem;
+        text-align: left;
+        padding: 0 0 0 2em;
+        font-size: 18px;
+    }
+        
+    .break-3{
+        display:flex;
+        margin:0 -1.5rem;
+        text-align: left;
+        
+    }
+    .block-3{
+        width:calc(50% - 1.5rem);
+        margin:0 1.5rem;
+        padding: 0 0 0 3em;
+    }
     
-}
-@media screen and (min-width:1680px){
-
     .container{
         max-width:1300px;
     }
-    html{
-        font-size:18px;
+    body{
+        font-size: 11pt;
     }
+
+
+
     
 }
